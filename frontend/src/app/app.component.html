@@ -1,0 +1,42 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Task</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/register']" routerLinkActive="active">Sign Up
+                  <span class="sr-only">(current)</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Login</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/user']" routerLinkActive="active">User Page</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+<header>
+    <div class="smoothie">
+      <img src="/smoothie.png" alt="">
+    </div>
+    <div class="headings">
+      <h2>Hello</h2>
+      <h3></h3>
+      <a href="/smoothies" class="btn">View </a>
+    </div>
+  </header>
+<div class="continer-fluid">
+  <div class="row">
+      <div class="col-md-6 offset-md-3">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
